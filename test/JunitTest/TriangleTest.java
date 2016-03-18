@@ -21,11 +21,19 @@ public class TriangleTest {
     }
 
     @Test
-    public void testTestTriangle() throws Exception {
+    public void testTestTriangle1() throws Exception {//判断是否是三角形
         assertEquals(Triangle.Type.NotTriangle, Triangle.testTriangle(1,2,3));
+    }
+    @Test
+    public void testTestTriangle2() throws Exception {//判断是否等边
         assertEquals(Triangle.Type.Equilateral, Triangle.testTriangle(2,2,2));
-        assertEquals(Triangle.Type.Equilateral, Triangle.testTriangle(2,2,2));
+    }
+    @Test
+    public void testTestTriangle3() throws Exception {//判断是否等腰
         assertEquals(Triangle.Type.Isosceles, Triangle.testTriangle(2,2,3));
-        assertEquals(Triangle.Type.Isosceles, Triangle.testTriangle(2,5,3));
+    }
+    @Test
+    public void testTestTriangle4() throws Exception {//盘算是否是普通三角形
+        assertEquals(Triangle.Type.Scalene, Triangle.testTriangle(4,5,7));
     }
 }
