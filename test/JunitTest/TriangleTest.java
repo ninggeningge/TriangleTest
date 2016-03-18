@@ -26,5 +26,6 @@ public class TriangleTest {
         assertEquals(Triangle.Type.Equilateral, Triangle.testTriangle(2,2,2));
         assertEquals(Triangle.Type.Equilateral, Triangle.testTriangle(2,2,2));
         assertEquals(Triangle.Type.Isosceles, Triangle.testTriangle(2,2,3));
+        assertEquals(Triangle.Type.Isosceles, Triangle.testTriangle(2,5,3));
     }
 }
