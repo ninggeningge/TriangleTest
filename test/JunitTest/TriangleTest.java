@@ -13,6 +13,7 @@ public class TriangleTest {
 
     @Before
     public void setUp() throws Exception {
+
     }
 
     @After
